@@ -1,30 +1,34 @@
 {
-  "version": "1.0.0",
-  "discord": {
-    "clientId": "12334567890123456789",
-    "smallImageText": "MonkeyVille",
-    "smallImageKey": "seal-circle"
+  "meta": {
+    "rss": "https://github.com/FunkyKong-Nohko/MonkeyVille-Distribution/releases.atom"
   },
-  "rss": "https://github.com/FunkyKong-Nohko/MonkeyVille-Distribution/releases.atom",
   "servers": [
     {
       "id": "monkeyville",
-      "name": "MonkeyVille",
+      "name": "Monkey Ville",
       "description": "Serveur entre singes.",
       "icon": "https://raw.githubusercontent.com/FunkyKong-Nohko/MonkeyVille-Distribution/main/icon.png",
       "version": "1.0.0",
       "address": "91.197.6.208:26788",
       "minecraftVersion": "1.20.1",
-      "discord": {
-        "shortId": "MonkeyVille",
-        "largeImageText": "MonkeyVille Server",
-        "largeImageKey": "server-example"
-      },
-      "mainServer": true,
-      "autoconnect": true,
+      "mainModule": "monkeyville-modpack",
       "modules": [
-        "MonkeyVille_Modpack"
-      ]
+        {
+          "id": "monkeyville-modpack",
+          "name": "MonkeyVille Modpack",
+          "type": "archive",
+          "required": true,
+          "artifact": {
+            "url": "https://github.com/FunkyKong-Nohko/MonkeyVille-Distribution/releases/download/v1.0.0/monkeyville-1.0.0.zip",
+            "size": 0,
+            "MD5": ""
+          }
+        }
+      ],
+      "loader": {
+        "type": "forge",
+        "version": "47.2.0"
+      }
     }
   ]
 }
