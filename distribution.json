@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "rss": "https://github.com/FunkyKong-Nohko/MonkeyVille-Distribution/releases.atom"
+  },
+  "servers": [
+    {
+      "id": "monkeyville",
+      "name": "Monkey Ville",
+      "description": "Serveur entre singes.",
+      "version": "1.0.0",
+      "address": "91.197.6.208:26788",
+      "minecraftVersion": "1.20.1",
+      "loader": {
+        "type": "forge",
+        "version": "47.2.0"
+      },
+      "distribution": {
+        "type": "archive",
+        "url": "https://github.com/FunkyKong-Nohko/MonkeyVille-Distribution/releases/download/v1.0.0/monkeyville-1.0.0.zip"
+      }
+    }
+  ]
+}
