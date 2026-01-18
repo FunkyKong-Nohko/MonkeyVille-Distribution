@@ -7,7 +7,6 @@
       "id": "monkeyville",
       "name": "Monkey Ville",
       "description": "Serveur entre singes.",
-      "icon": "https://raw.githubusercontent.com/FunkyKong-Nohko/MonkeyVille-Distribution/main/icon.png",
       "version": "1.0.0",
       "address": "91.197.6.208:26788",
       "minecraftVersion": "1.20.1",
